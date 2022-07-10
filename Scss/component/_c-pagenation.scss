@@ -1,12 +1,13 @@
 @use "../global/" as g;
 
-.text-center {
+.wp-pagenavi {
     display: flex;
     justify-content: center;
     margin-top: 10vh;
     margin-bottom: 5vh;
     font-weight: bold;
     font-size: 2em;
+
 @include g.breakpoint (tablet) {
     margin-top: 13vh;
     margin-bottom: 3vh;
@@ -15,4 +16,23 @@
     display: none;
 
 }
+& > span {
+    background-color: #fff;
+}
+& > a {
+    background-color: #fff;
+}
+}
+
+span.pages{
+    border: none;
+    background-color: #FFFDFA;
+}
+
+a.previouspostslink {
+    border: none;
+}
+
+a.nextpostslink {
+    border: none;
 }

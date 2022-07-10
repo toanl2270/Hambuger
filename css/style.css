@@ -1,7 +1,3 @@
-
-
-
-
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto&display=swap");
 img {
@@ -1550,7 +1546,7 @@ ul:nth-of-type(2) {
   }
 }
 
-.text-center {
+.wp-pagenavi {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
@@ -1559,15 +1555,34 @@ ul:nth-of-type(2) {
   font-size: 2em;
 }
 @media (max-width: 1132px) {
-  .text-center {
+  .wp-pagenavi {
     margin-top: 13vh;
     margin-bottom: 3vh;
   }
 }
 @media (max-width: 599px) {
-  .text-center {
+  .wp-pagenavi {
     display: none;
   }
+}
+.wp-pagenavi > span {
+  background-color: #fff;
+}
+.wp-pagenavi > a {
+  background-color: #fff;
+}
+
+span.pages {
+  border: none;
+  background-color: #FFFDFA;
+}
+
+a.previouspostslink {
+  border: none;
+}
+
+a.nextpostslink {
+  border: none;
 }
 
 .l-main__single__top__txt {
