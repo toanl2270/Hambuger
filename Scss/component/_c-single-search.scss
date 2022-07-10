@@ -1,0 +1,13 @@
+@use "../global/" as g;
+
+.l-main__single__top__txt {
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    color: #fff;
+    font-size: 3.8em;
+    font-family: "Roboto";
+@include g.breakpoint (tablet) {
+    font-size: 4em;
+}
+}

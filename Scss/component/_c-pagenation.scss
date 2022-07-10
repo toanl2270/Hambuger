@@ -1,0 +1,18 @@
+@use "../global/" as g;
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    font-weight: bold;
+    font-size: 2em;
+@include g.breakpoint (tablet) {
+    margin-top: 13vh;
+    margin-bottom: 3vh;
+}
+@include g.breakpoint (sp) {
+    display: none;
+
+}
+}

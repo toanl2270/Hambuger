@@ -1,0 +1,239 @@
+@use "../global/mixin" as g;
+
+.l-main {
+    background-color: #FFFDFA;
+    color: #3C2A10;
+}
+
+.l-main__body {
+    margin: 0em 6em 0em 6em;
+@include g.breakpoint (sp) { 
+    margin: 0em 2em 0em 2em;
+}    
+}
+
+
+.l-main__page__top__image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 380px;
+@include g.breakpoint (sp) {
+    height: 283px;
+    background-position: left;
+}
+& > img {
+    height: 100%;
+    width: 100%;
+}
+}
+
+.l-main__page__section1__title {
+    margin-top: 1.5em;
+    font-size: 2.8em;
+}
+
+.l-main__page__section1__txt {
+    margin-top: 4em;
+    font-size: 1.2em;
+}
+
+.l-main__page__section2 {
+    margin: 5em 0em 3em 0em;
+
+}
+
+.l-main__page__section2 h3 {
+    font-size: 2em;
+}
+
+.l-main__page__section2 h4 {
+    margin-top: 3em;
+    font-size: 1.5em;
+@include g.breakpoint (sp) {
+    margin-top: 2em;
+}
+}
+
+.l-main__page__section2 h5 {
+    font-size: 1.5em;
+    margin-top: 5em;
+@include g.breakpoint (sp) {
+    margin-top: 2em;
+}
+}
+
+.l-main__page__section2 h6 {
+    font-size: 1.5em;
+    margin-top: 6em;
+@include g.breakpoint (sp) {
+    margin-top: 2em;
+}
+}
+
+.l-main__page__section3 {
+    padding: 1em 3em 1em 3em;
+    background-color: #F5F5F5;
+
+& p {
+    margin: 3em 0em 3em 0em;
+}
+}
+
+.l-main__page__section3__cite {
+    margin: 3em 0em 3em 0em;
+& a {
+    font-style: normal;
+    text-decoration: underline;
+}
+}
+
+.l-main__page__section4 {
+    margin: 5em 0em 5em 0em;
+@include g.breakpoint (sp) {
+    margin: 3em 0em 3em 0em;
+}
+}
+
+.l-main__page__section4__sub1__body1 {
+    display: flex;
+    margin: 5em 0em 5em 0em;
+    width: 100%;
+& p {
+    text-indent: 1em;
+    margin-left: 3em;
+@include g.breakpoint (sp) {
+    margin-left: 1em;
+}
+}
+}
+
+.l-main__page__section4__sub1_img {
+    width: 100%;
+@include g.breakpoint (tablet) {
+    width: 50%;
+    height: auto;
+}
+@include g.breakpoint (sp) {
+    height: 89px;
+}
+}
+
+.l-main__page__section4__sub1__body2 {
+    display: flex;
+    margin-bottom: 5em;
+& p {
+    text-indent: 1em;
+    margin-right: 3em;
+    
+@include g.breakpoint (sp) {
+    margin-right: 1em;
+   
+}
+}
+}
+
+.l-main__page__section4__sub1__body3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.l-main__page__section4__sub1__body3 img {
+@include g.breakpoint (tablet) {
+    width: 70%;
+}
+@include g.breakpoint (sp) {
+    width: 80%;
+}
+}
+
+.l-main__page__section5__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+@include g.breakpoint (tablet) {
+    grid-template-columns: 1fr 1fr;
+}
+@include g.breakpoint (sp) {
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+}
+
+.l-main__page__section6__body {
+    margin: 5em;
+& ul {
+    list-style: none;
+}
+}
+
+.l-main__page__section6__body__list1 {
+    margin-top: 3em;
+}
+
+.l-main__page__section6__body__list2 {
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+.l-main__page__section6__body__list3 {
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+
+.l-main__page__section6__body__list4 {
+    margin-top: 3em;
+}
+.l-main__page__section6__body__list5 {
+    margin-top: 3em;
+    margin-left: 3em;
+}
+.l-main__page__section6__body__list6 {
+    margin-top: 3em;
+}
+
+.l-main__page__section7 {
+    background-color: #F5F5F5;
+    padding: 3em;
+
+& ul {
+    list-style: none;
+}
+}
+.l-main__page__section7__body li:not(:first-of-type):not(:last-of-type) {
+    margin-left: 2em;
+}
+
+.l-main__page__section8__body {
+    margin: 5em 0em 5em 0em;
+& table {
+    width: 100%;
+}
+
+}
+
+.l-main__page__section8__body table  {
+    border-collapse: collapse;
+    background-color: #FFF;
+}
+.l-main__page__section8__body table tr td {
+    font-size: 1.4em;
+    border: solid 1px #707070;
+    padding: 2em 0em 2em 2em ;
+
+    &:nth-child(1n) {
+    width: 35%;
+}
+&:nth-child(2n) {
+    width: 65%;
+
+}
+}
+.l-main__page__txt {
+    padding: 5em 0em 20em 0em;
+& p {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+}

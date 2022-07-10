@@ -1,0 +1,107 @@
+@use "../global/" as g;
+
+
+.l-main__service__menu__body {
+    width: 100%
+}
+
+.l-main__service__menu__body li {
+    list-style: none ;
+}
+.l-main__service__menu__sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.l-main__service__menu__body hr {
+    border: solid 2px #fff;
+    width: 50px;
+    margin-top: 17px;
+    margin-left: 25px;
+    margin-bottom: 15rem;
+@include g.breakpoint (tablet) {
+    width: 25px;
+}
+}
+
+.l-main__service__menu__body h2 {
+    color: #fff;
+    font-size: 5.5em;
+    font-family: 'Roboto';
+    padding-top: 14px;
+    padding-left: 15px;
+@include g.breakpoint (tablet) {
+    font-size: 3.5em;
+}
+}
+
+.l-main__service__menu__body dl {
+    background-color: rgba(255,255,255,80%);
+
+}
+
+.l-main__service__menu__body dt {
+    font-size: 2.2em;
+    font-weight: 700;
+    font-family: 'M PLUS 1p';
+}
+
+.l-main__service__menu__body dd {
+    color: #3C2A10;
+    font-size: 1.6em;
+    line-height: 1.7em;
+    margin: 0 15px 15px 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+.l-main__service__menu__takeout__card {
+    box-sizing: border-box;
+    margin-top: auto;
+
+}
+.l-main__service__menu__takeout {
+    margin: 105px 30px 100px 80px;
+@include g.breakpoint (tablet) {
+    margin: 40px 15px 35px 40px;
+@include g.breakpoint (sp) {
+    margin: 20px;
+}    
+}
+&__subtitle {
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-bottom: 9px;
+}
+}
+
+.l-main__service__menu__eatin {
+    margin: 105px 80px 100px 30px;
+@include g.breakpoint (tablet) {
+    margin: 40px 40px 35px 25px;
+}
+@include g.breakpoint (sp) {
+    margin: 20px 20px 50px 20px;
+} 
+&__subtitle {
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-bottom: 9px;
+}
+}
+
+.l-main__service__menu__eatin__card {
+    box-sizing: border-box;
+    margin-top: auto;
+
+}
+
+.l-main__service__menu__card__sub {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}

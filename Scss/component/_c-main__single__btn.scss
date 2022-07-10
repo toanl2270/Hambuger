@@ -1,0 +1,21 @@
+@use "../global/" as g;
+
+
+  .c-main__single__btn{
+    cursor: pointer;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    background: #F2EDE9;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #707070;
+    height: 80px;
+    width: 330px;    
+
+  @include g.breakpoint (tablet) {
+  
+  }
+  @include g.breakpoint (sp) {
+    width: 100%;
+  }
+}

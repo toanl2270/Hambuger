@@ -1,0 +1,46 @@
+@use "../global/" as g;
+
+.l-header {
+        background-color: #FFF7EF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Roboto;
+
+    @include g.breakpoint (tablet) {
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+.l-header__title {
+        color: #707070;
+        font-size: 5.5em;
+        font-weight: bold;
+        margin-left: 55px;
+    @include g.breakpoint (tablet) {
+        font-size: 3.5em;
+        margin: 30px 0px 0px 0px;
+    }
+    @include g.breakpoint (sp) {
+        font-size: 4em;
+        margin: 40px 0px 40px 0;
+    }
+}
+
+.l-header__sidebar__open {
+        display: none;
+    @include g.breakpoint (tablet) {
+        position: absolute;
+        display: block;
+        font-size: 2.8em;
+        font-weight: bold;
+        color: #707070;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    @include g.breakpoint (sp) {
+        font-size: 2em;
+    }
+}

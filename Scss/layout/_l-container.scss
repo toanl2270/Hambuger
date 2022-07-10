@@ -1,0 +1,19 @@
+@use "../global/mixin" as g;
+
+body.noneScroll {
+    position: fixed;
+}
+
+
+.l-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 195px 1fr 130px;     
+    grid-template-columns: 1fr 23%;     
+    box-sizing: border-box; 
+
+@include g.breakpoint (tablet) {
+    display: block;
+
+} 
+}

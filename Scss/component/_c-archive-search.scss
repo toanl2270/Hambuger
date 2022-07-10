@@ -1,0 +1,34 @@
+@use "../global/" as g;
+
+.l-main__archive__top__txt {
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    color: #fff;
+    font-size: 3.8em;
+    font-family: "Roboto";
+@include g.breakpoint (tablet) {
+    font-size: 4.5em;
+}
+@include g.breakpoint (sp) {
+    font-size: 3.5em;
+}
+}
+
+.l-main____archive__top__txt_sub {
+    position: absolute;
+    top: 48%;
+    left: 200px;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #fff;
+
+@include g.breakpoint (tablet) {
+    top: 50%;
+    left: 230px;
+}
+@include g.breakpoint (sp) {
+    top: 60%;
+    left: 50px;
+}
+}

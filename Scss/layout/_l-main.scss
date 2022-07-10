@@ -1,0 +1,81 @@
+@use "../global/" as g;
+
+.l-main__top__image {
+    position: relative;
+    background-image: url(../images/top-hurg-pc.png);
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 480px;
+
+@include g.breakpoint (tablet) {
+    height: 245px;   
+}
+@include g.breakpoint (sp) {
+    background-image: url(../images/top-hurg-sp.png);
+    height: 285px;
+}
+}
+
+.l-main__top__txt {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: #fff;
+    font-size: 3.8em;
+
+@include g.breakpoint (tablet) {
+    display: none;   
+}
+@include g.breakpoint (sp) {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    color: #fff;
+    font-size: 3.6em;
+}
+}
+
+.l-main__service__menu__body {
+    display: flex;
+    background-color: #FFFDFA;
+@include g.breakpoint (sp) {
+    display: flex;
+    flex-flow: column;
+}
+}
+
+.l-main__service__menu__takeout {
+    background-image: url(../images/menu-takeout-pc.png);
+    background-size: cover;
+    width: 100%;
+@include g.breakpoint (tablet) {
+    background-image: url(../images/menu-takeout-tab.png);
+    background-size: cover;
+
+}
+@include g.breakpoint (sp) {
+    background-image: url(../images/menu-takeout-sp.png);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+}
+}
+.l-main__service__menu__eatin {
+    background-image: url(../images/menu-eatin-pc.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+@include g.breakpoint (tablet) {
+    background-image: url(../images/menu-eatin-tab.png);
+    background-position: center;
+}
+@include g.breakpoint (sp) {
+    background-image: url(../images/menu-eatin-sp.png);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+}
+}

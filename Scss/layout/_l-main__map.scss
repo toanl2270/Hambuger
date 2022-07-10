@@ -1,0 +1,63 @@
+@use "../global/" as g;
+.l-main__map {
+    display: block;
+    position: relative;
+    min-height: 400px;
+@include g.breakpoint (tablet) {
+    min-height: 400px;  
+}
+
+&::before {
+    content: "";
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 200;
+    height: 100%;
+    width: 100%;
+@include g.breakpoint (sp) {
+    height: 60%;
+}
+}
+& iframe {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+}
+
+.l-main__map__container {
+    display: block;
+    position: relative;
+    background-color: rgba(0,0,0,0.29);
+    z-index: 400;
+    color: #fff;
+    width: 60%;
+    padding: 83px 110px 40px 110px;
+@include g.breakpoint (tablet) {
+    width: 100%; 
+    padding: 30px 40px 40px 40px;  
+    }
+
+& hr {
+    border: solid 0.5px #fff;
+    width: 60px;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+@include g.breakpoint (tablet) {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    }
+}
+& p {
+    font-size: 1.4em;
+    line-height: 2em;
+    font-weight: bold;
+}
+}
+
+.l-main__map__title {
+    font-size: 3em;
+}

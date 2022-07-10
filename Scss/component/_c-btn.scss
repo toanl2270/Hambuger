@@ -1,0 +1,70 @@
+@use "../global/" as g;
+
+.btn {
+    cursor: pointer;
+}
+
+.l-sidebar__close {
+    width: 100%;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.l-sidebar__close__btn {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0;
+}
+
+
+.l-sidebar__close__btn::before{
+    @include g.breakpoint (tablet) {
+    content: "";
+    width: 55%;
+    height: 5px;
+    top: 50%;
+    left: 22.5%;
+    background-color: #707070;
+    position: absolute;
+    display: block;
+    transform: rotate(45deg);
+}
+}
+
+
+.l-sidebar__close__btn::after {
+    @include g.breakpoint (tablet) {
+    content: "";
+    width: 55%;
+    height: 5px;
+    top: 50%;
+    left: 22.5%;
+    background-color: #707070;
+    position: absolute;
+    display: block;
+    transform: rotate(-45deg);
+}
+}
+
+.archive__card__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.archive__card__btn > a {
+    margin-top: 5vh;
+    border:1px #fff solid;background-color: #fff;
+    border-radius:  50vh;
+    padding: 2vh 8vh 2vh 8vh;
+    color: #707070;
+    font-size: 1.4em;
+
+@include g.breakpoint (tablet) {
+    padding: 1vh 5vh 1vh 5vh;
+    font-size: 1.4em;
+
+}  
+}

@@ -1,0 +1,33 @@
+@use "../global/" as g;
+
+.l-sidebar_open {
+    top: 0;
+    left: 55%;
+    height: 100vh;
+    width: 45%;
+    z-index: 2000;
+    overflow: auto;
+@include g.breakpoint (sp) {
+    left: 20%;
+    width: 80%;
+}
+}
+
+.l-sidebar__main_bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    z-index: 1000;
+}
+.l-sidebar__main_bg.l-sidebar_open {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    background-color: rgba(0,0,0,0.6);
+    background-attachment: fixed;
+    }
