@@ -406,7 +406,7 @@ body.noneScroll {
   top: 40%;
   left: 5%;
   color: #fff;
-  font-size: 3.8em;
+  font-size: 6em;
 }
 @media (max-width: 1132px) {
   .l-main__top__txt {
