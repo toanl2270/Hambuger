@@ -4,7 +4,7 @@
             <main class="l-main">
                 <div class="l-main__top__image">
                     <h2 class="l-main__top__txt">
-                    ダミーサイト
+                    <?php bloginfo( 'name' ); ?>
                     </h2>
                 </div>
 
