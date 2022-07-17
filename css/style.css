@@ -655,6 +655,12 @@ body.noneScroll {
   width: 100%;
   height: 239px;
 }
+@media (max-width: 599px) {
+  .l-main__archive__top__image > img {
+    height: 283px;
+    background-position: left;
+  }
+}
 
 .l-main__archive__top__image {
   position: relative;
