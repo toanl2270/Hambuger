@@ -1,0 +1,137 @@
+@use "../global/mixin" as g;
+
+.l-main {
+    background-color: #FFFDFA;
+}
+
+.l-main__archive__top__image >img {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 239px; 
+@include g.breakpoint (sp) {
+    height: 283px;
+    background-position: left;
+}
+}
+
+.l-main__archive__top__image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 239px;
+@include g.breakpoint (sp) {
+    height: 283px;
+    background-position: left;
+}
+
+&::before {
+    content: ""; 
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+}
+
+.l-main__archive {
+    margin: 5vh 8vh 5vh 8vh;
+    color: #3C2A10;
+
+
+@include g.breakpoint (sp) {
+    margin: 3vh 2vh 2vh 2vh;
+}
+}
+
+.l-main__archive__subheading {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+}
+
+.archive__card {
+    display: flex;
+    margin: 0vh 8vh 3vh 8vh;
+@include g.breakpoint (tablet) {
+    margin: 0vh 5vh 2vh 5vh;
+}
+@include g.breakpoint (sp) {
+    margin: 0vh 2vh 30vh 2vh;
+}
+}
+
+.archive__card__body {
+    display: flex;
+    width: 100%;
+    height: 420px;
+    @include g.breakpoint (sp) {
+        display: block;
+
+    }
+}
+
+.archive__card__img {
+    //background-image: url(../images/archive-section.png);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+
+& > img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@include g.breakpoint (sp) {
+    width: 100%;
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+}
+}
+
+.archive__card__txt {
+    background-color: #3C2B1C;
+    width: 50%; 
+    padding: 5vh 5vh 5vh 5vh;
+    color: #fff;
+@include g.breakpoint (tablet) {
+    padding: 3vh 3vh 3vh 3vh;
+} 
+@include g.breakpoint (sp) {
+    width: 100%;
+    padding: 3vh 3vh 5vh 3vh;
+}
+}
+
+.archive__card__txt h2 {
+    font-size: 2.8em;
+    margin-bottom: 5vh;
+@include g.breakpoint (tablet) {
+    font-size: 2em;
+    margin-bottom: 3vh;
+}
+}
+
+.archive__card__txt h4 {
+    font-size: 2em;
+    margin-bottom: 15px;
+@include g.breakpoint (tablet) {
+    font-size: 1.6em;
+}
+}
+
+.archive__card__txt p {
+    max-width: 90%;
+@include g.breakpoint (tablet) {
+    font-size: 1.2em;
+}
+}
+
+
+

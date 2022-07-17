@@ -1547,8 +1547,8 @@ ul:nth-of-type(2) {
 }
 @media (max-width: 599px) {
   .l-main____archive__top__txt_sub {
-    top: 60%;
-    left: 50px;
+    top: 45%;
+    left: 30%;
   }
 }
 
