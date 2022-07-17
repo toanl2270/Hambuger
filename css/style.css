@@ -488,7 +488,6 @@ body.noneScroll {
   .l-footer {
     padding-top: 20px;
     padding-bottom: 30px;
-    margin-top: 15em;
   }
 }
 .l-footer ul {
@@ -707,7 +706,7 @@ body.noneScroll {
 }
 @media (max-width: 599px) {
   .archive__card {
-    margin: 0vh 2vh 2vh 2vh;
+    margin: 0vh 2vh 30vh 2vh;
   }
 }
 
